@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Armocromia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seleziona il tuo colore</h1>
+    <form id="armocromiaTest">
+        <div class="color-selector">
+            <!-- Input radio nascosti con immagini di Unsplash -->
+            <input type="radio" name="capelli" id="nero" value="Neri" hidden>
+            <label for="nero">
+                <img src="https://images.unsplash.com/photo-1515771592751-51b8033f3658?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg1OXwwfDF8c2VhcmNofDJ8fG5lZ3JvfGVufDB8fHx8fDE2NTg0NTM0Nzg&ixlib=rb-1.2.1&q=80&w=400" alt="Neri">
+            </label>
+
+            <input type="radio" name="capelli" id="castano_scuro" value="Castano Scuro" hidden>
+            <label for="castano_scuro">
+                <img src="https://images.unsplash.com/photo-1605920905361-b209a535d271?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg1OXwwfDF8c2VhcmNofDF8fGNhc3Rhbm98ZW58MHx8fHx8fDE2NTg0NTM2MzY&ixlib=rb-1.2.1&q=80&w=400" alt="Castano Scuro">
+            </label>
+
+            <input type="radio" name="capelli" id="castano_medio" value="Castano Medio" hidden>
+            <label for="castano_medio">
+                <img src="https://images.unsplash.com/photo-1604659263537-2d70adf5a3c9?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg1OXwwfDF8c2VhcmNofDJ8fGNhc3Rhbm98ZW58MHx8fHx8fDE2NTg0NTM3NzI&ixlib=rb-1.2.1&q=80&w=400" alt="Castano Medio">
+            </label>
+
+            <input type="radio" name="capelli" id="biondo" value="Biondo" hidden>
+            <label for="biondo">
+                <img src="https://images.unsplash.com/photo-1603938077569-bd1e3544825a?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg1OXwwfDF8c2VhcmNofDJ8fGJpb25kbyUyMHNoYWlyb3xlbnwwfHx8fDE2NTg0NTM3NzM&ixlib=rb-1.2.1&q=80&w=400" alt="Biondo">
+            </label>
+
+            <input type="radio" name="capelli" id="biondo_rossato" value="Biondo Rossato" hidden>
+            <label for="biondo_rossato">
+                <img src="https://images.unsplash.com/photo-1585894651424-b35b0722d8de?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg1OXwwfDF8c2VhcmNofDJ8fGJpb25kbyUyMHJvc3NhdG98ZW58MHx8fHx8fDE2NTg0NTM3NzU&ixlib=rb-1.2.1&q=80&w=400" alt="Biondo Rossato">
+            </label>
+        </div>
+        <button type="submit">Continua</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

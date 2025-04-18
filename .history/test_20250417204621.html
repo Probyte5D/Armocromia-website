@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Armocromia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seleziona il tuo colore</h1>
+    <form id="armocromiaTest">
+        <div class="color-selector">
+            <!-- Input radio nascosti con immagini di Unsplash -->
+            <input type="radio" name="capelli" id="nero" value="Neri" hidden>
+            <label for="nero">
+                <img src="https://images.unsplash.com/photo-1502711461379-d71e7b902510" alt="Neri">
+            </label>
+
+            <input type="radio" name="capelli" id="castano_scuro" value="Castano Scuro" hidden>
+            <label for="castano_scuro">
+                <img src="https://images.unsplash.com/photo-1663582815412-665909d70e01?q=80&w=1366&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Castano Scuro">
+            </label>
+
+            <input type="radio" name="capelli" id="castano_medio" value="Castano Medio" hidden>
+            <label for="castano_medio">
+                <img src="https://images.unsplash.com/photo-1605980766335-d3a41c7332a1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Castano Medio">
+            </label>
+
+            <input type="radio" name="capelli" id="biondo" value="Biondo" hidden>
+            <label for="biondo">
+                <img src="https://images.unsplash.com/photo-1605934357621-5bb659994fff" alt="Biondo">
+            </label>
+
+            <input type="radio" name="capelli" id="biondo_rossato" value="Biondo Rossato" hidden>
+            <label for="biondo_rossato">
+                <img src="https://images.unsplash.com/photo-1506281140567-bf2b3c946fe1" alt="Biondo Rossato">
+            </label>
+        </div>
+        <button type="submit">Continua</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

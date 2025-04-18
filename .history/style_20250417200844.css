@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.season {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.season h2 {
+  margin-top: 0;
+}
+
+.palette {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.color {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid #eee;
+}
+
+.color:hover {
+  transform: scale(1.1);
+  border-color: #999;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  color: #666;
+}
+
+.test-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#vai-al-test {
+  padding: 15px 30px;
+  background-color: #fcb69f;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#vai-al-test:hover {
+  background-color: #ffb6a7;
+}
+

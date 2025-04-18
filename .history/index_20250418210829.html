@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Armocromia - Scopri la tua stagione</title>
+  
+  <!-- CSS personalizzato -->
+  <link rel="stylesheet" href="style.css" />
+   <!-- Aggiungi il link a Font Awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+ù
+  <!-- Bootstrap CSS -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.5);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo Armocromia" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="test.html">Test Armocromia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>  <img src="images/logo.png" alt="Logo Armocromia" style="height: 10rem;"> Armocromia</h1>
+    <p>Scopri le palette perfette per la tua stagione.</p>
+    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#introModal">Cos'è l'Armocromia?</button>
+    <div class="scroll-down">↓</div>
+  </header>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="introModal" tabindex="-1" aria-labelledby="introModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header">
+          <h5 class="modal-title">Benvenuto nel mondo dell’armocromia ✨</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          L'armocromia è lo studio dei colori più adatti a te in base a incarnato, occhi e capelli.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Inizia!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+    <section class="carousel-container">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Card Primavera -->
+         <!-- Card Primavera -->
+<!-- Card Primavera -->
+<div class="carousel-item active">
+  <div class="card primavera">
+    <h3>🌸 Primavera <i class="fas fa-dove"></i></h3> <!-- Aggiunta dell'icona dell'uccello -->
+    <img src="https://images.unsplash.com/photo-1518943701174-17e4aff936d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByaW1hdmVyYXxlbnwwfHwwfHx8MA%3D%3D" alt="Primavera" class="season-img">
+    <p>Toni caldi, chiari e brillanti. Perfetti per chi ha pelle dorata e occhi chiari.</p>
+    <div class="palette">
+      <div class="color" style="background-color: #FFD1DC;" title="Colore 1: Rosa Chiaro"></div>
+      <div class="color" style="background-color: #FFFACD;" title="Colore 2: Giallo Pallido"></div>
+      <div class="color" style="background-color: #E0BBE4;" title="Colore 3: Lavanda"></div>
+      <div class="color" style="background-color: #FFB347;" title="Colore 4: Arancione"></div>
+      <div class="color" style="background-color: #B5EAD7;" title="Colore 5: Verde Menta"></div>
+      <a href="test.html" class="btn btn-outline-primary mt-3">Scopri di più</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card Estate -->
+<div class="carousel-item">
+  <div class="card estate">
+    <h3>☀️ Estate <i class="fas fa-sun"></i></h3> <!-- Aggiunta dell'icona occhiali da sole -->
+    <img src="https://images.unsplash.com/photo-1517384084767-6bc118943770?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Estate" class="season-img">
+    <p>Toni freddi e soft, ideali per carnagioni rosate e occhi chiari.</p>
+    <div class="palette">
+      <div class="color" style="background-color: #BFD7EA;"></div>
+      <div class="color" style="background-color: #D6E2E9;"></div>
+      <div class="color" style="background-color: #A2D2FF;"></div>
+      <div class="color" style="background-color: #CDB4DB;"></div>
+      <div class="color" style="background-color: #E2F0CB;"></div>
+      <a href="test.html" class="btn btn-outline-primary mt-3">Scopri di più</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card Autunno -->
+<div class="carousel-item">
+  <div class="card autunno">
+    <h3>🍁 Autunno <i class="fas fa-leaf"></i></h3> <!-- Aggiunta dell'icona foglia -->
+    <img src="https://images.unsplash.com/photo-1516700675895-b2e35cae333c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXV0dW5ub3xlbnwwfHwwfHx8Mg%3D%3D" alt="Autunno" class="season-img">
+    <p>Toni caldi, intensi e terrosi. Per incarnati dorati e occhi scuri o verdi.</p>
+    <div class="palette">
+      <div class="color" style="background-color: #D2691E;"></div>
+      <div class="color" style="background-color: #C3B091;"></div>
+      <div class="color" style="background-color: #A0522D;"></div>
+      <div class="color" style="background-color: #F4A460;"></div>
+      <div class="color" style="background-color: #B22222;"></div>
+      <a href="test.html" class="btn btn-outline-primary mt-3">Scopri di più</a>
+    </div>
+  </div>
+</div>
+
+<!-- Card Inverno -->
+<div class="carousel-item">
+  <div class="card inverno">
+    <h3>❄️ Inverno <i class="fas fa-snowflake"></i></h3> <!-- Aggiunta dell'icona fiocco di neve -->
+    <img src="https://images.unsplash.com/photo-1612646785979-e1a8362ffa66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGludmVybm8lMjBuZXZlfGVufDB8fDB8fHwy" alt="Inverno" class="season-img">
+    <p>Toni freddi e contrastati, perfetti per pelli olivastre e capelli scuri.</p>
+    <div class="palette">
+      <div class="color" style="background-color: #000000;"></div>
+      <div class="color" style="background-color: #4169E1;"></div>
+      <div class="color" style="background-color: #8A2BE2;"></div>
+      <div class="color" style="background-color: #FF1493;"></div>
+      <div class="color" style="background-color: #00CED1;"></div>
+      <a href="test.html" class="btn btn-outline-primary mt-3">Scopri di più</a>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Controlli carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+
+    <section id="shop" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">🛍️ Il nostro Shop</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"> <!-- Questo fa sì che le card si adattino meglio -->
+          
+          <!-- Card prodotto 1 -->
+          <div class="col">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <div class="img-hover-wrap">
+                <img src="https://images.unsplash.com/photo-1571646034647-52e6ea84b28c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cm9zc2V0dG98ZW58MHx8MHx8fDI%3D" class="card-img-top main-img rounded-top-4 img-fluid" alt="Prodotto">
+                <img src="https://images.unsplash.com/photo-1631214499500-2e34edcaccfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9zc2V0dG98ZW58MHx8MHx8fDI%3D" class="card-img-top hover-img rounded-top-4 img-fluid" alt="Prodotto Hover">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Palette Personalizzata</h5>
+                <p class="card-text text-muted small">I tuoi colori ideali sempre con te, in formato digitale.</p>
+                <p class="text-primary fw-semibold">€29.00</p>
+                <a href="#" class="btn btn-outline-dark rounded-pill px-4">Scopri</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card prodotto 2 -->
+          <div class="col">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <img src="https://images.unsplash.com/photo-1581079289103-0544b7dfad66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGFybW9jcm9taWF8ZW58MHx8MHx8fDI%3D" class="card-img-top rounded-top-4 img-fluid" alt="Analisi armocromatica">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Analisi Armocromatica</h5>
+                <p class="card-text text-muted small">Consulenza online con la nostra esperta armocromista.</p>
+                <p class="text-primary fw-semibold">€59.00</p>
+                <a href="#" class="btn btn-outline-dark rounded-pill px-4">Prenota</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card prodotto 3 -->
+          <div class="col">
+            <div class="card border-0 shadow rounded-4 h-100">
+              <img src="https://images.unsplash.com/photo-1517472292914-9570a594783b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fG1vZGElMjBwYWxldHRlfGVufDB8fDB8fHwy" class="card-img-top rounded-top-4 img-fluid" alt="Consulenza look">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Consulenza Look</h5>
+                <p class="card-text text-muted small">Aiuto nella scelta di abiti, make-up e accessori perfetti per te.</p>
+                <p class="text-primary fw-semibold">€45.00</p>
+                <button class="btn btn-outline-dark rounded-pill px-4 apri-album" data-bs-toggle="modal" data-bs-target="#albumModal">Guarda Album</button>
+
+            
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Modal Album -->
+  <!-- Apply inert attribute to the modal (this prevents focus on the modal when closed) -->
+<div class="modal fade" id="introModal" tabindex="-1" aria-labelledby="introModalLabel" aria-hidden="true" inert>
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="albumModalLabel">Album Consulenza Look</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div id="lookAlbum" class="row g-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+    <section class="text-center my-5">
+      <h3>🎨 Genera una Palette dal tuo colore preferito!</h3>
+      <input type="color" id="colorPicker" value="#FF5733" />
+      <button onclick="generaPalette()" class="btn btn-primary ms-2">Genera</button>
+      
+      <div id="paletteResult" class="d-flex justify-content-center mt-4 gap-3"></div>
+    </section>
+
+
+    <!-- Link test -->
+    <section class="test-link text-center mt-5">
+      <a href="test.html"><button id="vai-al-test" class="btn btn-primary">Vai al Test!</button></a>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 p-3 bg-light">
+    <p>✨ Clicca un colore per copiarlo ✨</p>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="copyToast" class="toast text-bg-success border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">Colore copiato!</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Impostiamo il background e font di base */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Layout per il contenitore delle immagini */
+#lookAlbum {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Aumentato a 350px per ogni immagine */
+  gap: 30px;  /* Spazio maggiore tra le immagini */
+  margin-top: 30px;
+}
+
+/* Card immagine, posizione relativa per caption */
+.album-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  height: 400px;  /* Aumentato l'altezza per immagini più grandi */
+  width: 300px;
+}
+
+/* Immagini più grandi con altezza automatica per mantenere il rapporto */
+.album-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Assicura che l'immagine riempi il contenitore senza distorsioni */
+  object-position: center;  /* Centra l'immagine se è più grande del contenitore */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Effetto hover per ingrandire l'immagine */
+.album-item:hover img {
+  transform: scale(1.1); /* Ingrandisce l'immagine al passaggio del mouse */
+}
+
+/* Caption sovrapposta sopra l'immagine */
+.album-item .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+  #lookAlbum {
+    grid-template-columns: 1fr 1fr;  /* 2 immagini per riga su schermi medi */
+  }
+}
+
+@media (max-width: 480px) {
+  #lookAlbum {
+    grid-template-columns: 1fr;  /* 1 immagine per riga su schermi piccoli */
+  }
+}

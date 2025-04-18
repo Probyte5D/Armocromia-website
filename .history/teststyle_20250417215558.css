@@ -1,0 +1,83 @@
+/* Stile generale per il corpo */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Titolo principale */
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Stile per la griglia delle immagini */
+.color-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Griglia responsiva con colonne dinamiche */
+  gap: 15px;  /* Ridotto per un po' più di spazio tra le immagini */
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0 10px;  /* Padding per evitare che le immagini tocchino i bordi */
+}
+
+/* Immagini all'interno delle opzioni di colore */
+.color-option {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.color-option img {
+  width: 100px;  /* Ridotto per una dimensione più gestibile */
+  height: 100px;
+  border-radius: 8px;
+  border: 3px solid transparent;  /* Bordo trasparente di default */
+  transition: border 0.3s;
+}
+
+/* Applicare bordo rosso al passaggio del mouse */
+.color-option img:hover {
+  border-color: #ff6347;  /* Bordo rosso al passaggio del mouse */
+}
+
+/* Applicare bordo rosso quando l'immagine è selezionata */
+.color-option.selected img {
+  border-color: #ff6347;  /* Bordo rosso se selezionato */
+}
+
+/* Pulsante per inviare il modulo */
+button {
+  padding: 10px 20px;
+  background-color: #fcb69f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+/* Hover sul pulsante */
+button:hover {
+  background-color: #ffb6a7;
+}
+
+/* Risultato nascosto (da mostrare quando l'utente seleziona un'opzione) */
+#risultato {
+  display: none;
+  margin-top: 30px;
+}
+
+/* Allineamento di testo al centro */
+.text-center {
+  text-align: center !important;
+}
+
+/* Rimozione di margini e padding da alcuni elementi base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

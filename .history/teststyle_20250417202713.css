@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.step {
+  display: none; /* Nasconde tutti i passi di default */
+}
+
+.step.active {
+  display: block; /* Mostra solo il passo attivo */
+}
+
+.color-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.color-option {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+}
+
+.color-option img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.color-option:hover img {
+  transform: scale(1.1); /* Effetto di ingrandimento quando hover */
+}
+
+.color-option.selected img {
+  border: 3px solid #fcb69f; /* Bordo evidenziato per l'opzione selezionata */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fcb69f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffb6a7;
+}
+
+.palette {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Armocromia - Scopri la tua stagione</title>
+  
+  <!-- CSS personalizzato -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.5);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo Armocromia" style="height: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="test.html">Test Armocromia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>  <img src="images/logo.png" alt="Logo Armocromia" style="height: 10rem;"> Armocromia</h1>
+    <p>Scopri le palette perfette per la tua stagione.</p>
+    <button class="btn btn-outline-light mt-3" data-bs-toggle="modal" data-bs-target="#introModal">Cos'è l'Armocromia?</button>
+    <div class="scroll-down">↓</div>
+  </header>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="introModal" tabindex="-1" aria-labelledby="introModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header">
+          <h5 class="modal-title">Benvenuto nel mondo dell’armocromia ✨</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          L'armocromia è lo studio dei colori più adatti a te in base a incarnato, occhi e capelli.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Inizia!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main>
+    <section class="carousel-container">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Card Primavera -->
+          <div class="carousel-item active">
+            <div class="card primavera">
+              <h3>🌸 Primavera</h3>
+              <img src="https://images.unsplash.com/photo-1518943701174-17e4aff936d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByaW1hdmVyYXxlbnwwfHwwfHx8MA%3D%3D" alt="Primavera" class="season-img">
+              <p>Toni caldi, chiari e brillanti. Perfetti per chi ha pelle dorata e occhi chiari.</p>
+              <div class="palette">
+                <div class="color" style="background-color: #FFD1DC;" title="Colore 1: Rosa Chiaro"></div>
+                <div class="color" style="background-color: #FFFACD;" title="Colore 2: Giallo Pallido"></div>
+                <div class="color" style="background-color: #E0BBE4;" title="Colore 3: Lavanda"></div>
+                <div class="color" style="background-color: #FFB347;" title="Colore 4: Arancione"></div>
+                <div class="color" style="background-color: #B5EAD7;" title="Colore 5: Verde Menta"></div>
+                <a href="test.html" class="btn btn-outline-primary mt-3">Scopri di più</a>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Card Estate -->
+          <div class="carousel-item">
+            <div class="card estate">
+              <h3>☀️ Estate</h3>
+              <p>Toni freddi e soft, ideali per carnagioni rosate e occhi chiari.</p>
+              <div class="palette">
+                <div class="color" style="background-color: #BFD7EA;"></div>
+                <div class="color" style="background-color: #D6E2E9;"></div>
+                <div class="color" style="background-color: #A2D2FF;"></div>
+                <div class="color" style="background-color: #CDB4DB;"></div>
+                <div class="color" style="background-color: #E2F0CB;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Autunno -->
+          <div class="carousel-item">
+            <div class="card autunno">
+              <h3>🍁 Autunno</h3>
+              <p>Toni caldi, intensi e terrosi. Per incarnati dorati e occhi scuri o verdi.</p>
+              <div class="palette">
+                <div class="color" style="background-color: #D2691E;"></div>
+                <div class="color" style="background-color: #C3B091;"></div>
+                <div class="color" style="background-color: #A0522D;"></div>
+                <div class="color" style="background-color: #F4A460;"></div>
+                <div class="color" style="background-color: #B22222;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Inverno -->
+          <div class="carousel-item">
+            <div class="card inverno">
+              <h3>❄️ Inverno</h3>
+              <p>Toni freddi e contrastati, perfetti per pelli olivastre e capelli scuri.</p>
+              <div class="palette">
+                <div class="color" style="background-color: #000000;"></div>
+                <div class="color" style="background-color: #4169E1;"></div>
+                <div class="color" style="background-color: #8A2BE2;"></div>
+                <div class="color" style="background-color: #FF1493;"></div>
+                <div class="color" style="background-color: #00CED1;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controlli carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Link test -->
+    <section class="test-link text-center mt-5">
+      <a href="test.html"><button id="vai-al-test" class="btn btn-primary">Vai al Test!</button></a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 p-3 bg-light">
+    <p>✨ Clicca un colore per copiarlo ✨</p>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="copyToast" class="toast text-bg-success border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">Colore copiato!</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap & Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js">
+
+    // Inizializza carousel
+const myCarousel = document.querySelector('#carouselExample');
+if (myCarousel) {
+  new bootstrap.Carousel(myCarousel);
+}
+
+// Clicca su colore per copiarlo
+document.querySelectorAll('.color').forEach(el => {
+  el.addEventListener('click', () => {
+    navigator.clipboard.writeText(el.style.backgroundColor);
+    const toast = new bootstrap.Toast(document.getElementById('copyToast'));
+    toast.show();
+  });
+});
+
+  const openBtn = document.getElementById('openModalBtn');
+  const modal = document.getElementById('modal');
+  const closeBtn = document.getElementById('closeModalBtn');
+
+  openBtn.onclick = () => modal.style.display = 'flex';
+  closeBtn.onclick = () => modal.style.display = 'none';
+
+  window.onclick = e => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+  document.querySelectorAll('.color').forEach(el => {
+  el.addEventListener('click', () => {
+    // Aggiungi la classe 'selected'
+    el.classList.add('selected');
+    setTimeout(() => el.classList.remove('selected'), 1000); // Rimuovi dopo 1 secondo
+  });
+});
+
+</script>
+
+
+  </script>
+</body>
+</html>

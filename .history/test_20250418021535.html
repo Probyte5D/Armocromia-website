@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Test Armocromia</title>
+  <link rel="stylesheet" href="teststyle.css" />
+</head>
+<body>
+  <h1>Seleziona il tuo colore di capelli</h1>
+  <input type="hidden" id="capelli" name="capelli" />
+
+  <form id="armocromiaTest">
+    <div class="color-selector">
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1661818302487-467621dd1c19?w=500" alt="Neri" data-image="1" class="selectCapelliValue" />
+      </div>
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1596911647169-7085321c81b8?w=500" alt="Castano Scuro" data-image="2" class="selectCapelliValue" />
+      </div>
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1560264641-1b5191cc63e2?w=500" alt="Castano Medio" data-image="3" class="selectCapelliValue" />
+      </div>
+    </div>
+
+    <h1>Seleziona il colore dei tuoi occhi</h1>
+    <input type="hidden" id="occhi" name="occhi" />
+    <div class="color-selector">
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1668337969181-8594075b4a9e?w=500" alt="Castani" data-image="1" class="selectOcchiValue" />
+      </div>
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1575624373389-29cebdf163db?w=500" alt="Verdi" data-image="2" class="selectOcchiValue" />
+      </div>
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1656484899207-0fe871c028c3?w=500" alt="Azzurri" data-image="3" class="selectOcchiValue" />
+      </div>
+    </div>
+
+    <h1>Seleziona il colore della tua pelle</h1>
+    <input type="hidden" id="pelle" name="pelle" />
+    <div class="color-selector">
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1541752988809-6073b61ad3db?w=500" alt="Chiara" data-image="1" class="selectPelleValue" />
+      </div>
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1710580889701-9fa8f2cd5927?w=500" alt="Scura" data-image="2" class="selectPelleValue" />
+      </div>
+      <div class="color-option">
+        <img src="https://images.unsplash.com/photo-1631016066740-767dfc63096c?w=500" alt="Media" data-image="3" class="selectPelleValue" />
+      </div>
+    </div>
+
+    <button type="submit">Continua</button>
+  </form>
+
+  <div id="risultato" class="hidden">
+    <h2>Hai selezionato:</h2>
+    <p id="coloreCapelli"></p>
+    <p id="coloreOcchi"></p>
+    <p id="colorePelle"></p>
+    <p id="stagione"></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>

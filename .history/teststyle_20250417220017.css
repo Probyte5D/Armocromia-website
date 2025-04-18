@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* GRIGLIA immagini */
+.color-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* CONTENITORE dell'immagine */
+.color-option {
+  width: 120px;
+  height: 120px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border 0.3s;
+}
+
+/* IMMAGINE */
+.color-option img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* HOVER: bordo rosso */
+.color-option:hover {
+  border-color: #ff6347;
+}
+
+/* SELEZIONATO: bordo rosso persistente */
+.color-option.selected {
+  border-color: #ff6347;
+}
+
+/* BOTTONE */
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #fcb69f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffb6a7;
+}

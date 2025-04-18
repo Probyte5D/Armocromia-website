@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.color-selector {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+label img {
+  width: 120px;  /* Ridotto per una dimensione più gestibile */
+  height: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border 0.3s;
+}
+
+label img:hover {
+  border-color: #ff6347;  /* Colore di evidenza al passaggio del mouse */
+}
+
+/* Quando il radio button è selezionato, aggiungi il bordo rosso */
+input[type="radio"]:checked + label img {
+  border-color: #ff6347;  /* Colore di evidenza per l'immagine selezionata */
+}
+
+/* Selezione dell'elemento: Bordo rosso per l'immagine selezionata */
+input[type="radio"]:checked {
+  background-color: #ff6347;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fcb69f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #ffb6a7;
+}
+
+#risultato {
+  display: none;
+  margin-top: 30px;
+}

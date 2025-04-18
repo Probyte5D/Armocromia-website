@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test di Armocromia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Scopri la tua stagione</h1>
+    <p>Rispondi alle domande per conoscere la tua palette di colori ideale.</p>
+  </header>
+  <main>
+    <form id="armocromiaTest">
+      <div class="question">
+        <p>Qual è il colore naturale dei tuoi capelli?</p>
+        <label><input type="radio" name="capelli" value="chiari"> Chiari</label>
+        <label><input type="radio" name="capelli" value="scuri"> Scuri</label>
+      </div>
+      <div class="question">
+        <p>Qual è il colore dei tuoi occhi?</p>
+        <label><input type="radio" name="occhi" value="chiari"> Chiari</label>
+        <label><input type="radio" name="occhi" value="scuri"> Scuri</label>
+      </div>
+      <div class="question">
+        <p>Come reagisce la tua pelle al sole?</p>
+        <label><input type="radio" name="pelle" value="si_abbronza"> Si abbronza facilmente</label>
+        <label><input type="radio" name="pelle" value="si_scotta"> Si scotta facilmente</label>
+      </div>
+      <button type="submit">Scopri la tua stagione</button>
+    </form>
+    
+    <section id="risultato" class="hidden">
+      <h2 id="stagione"></h2>
+      <div id="palette" class="palette"></div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>

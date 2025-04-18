@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Armocromia</title>
+    <link rel="stylesheet" href="teststyle.css" />
+</head>
+<body>
+    <h1>Seleziona il tuo colore di capelli</h1>
+    <input type="hidden" id="capelli" name="capelli" value="">
+
+    <form id="armocromiaTest">
+        <div id="questionario" class="color-selector">
+            <div class="color-option">
+                <img src="https://images.unsplash.com/photo-1661818302487-467621dd1c19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGNhcGVsbGklMjBuZXJvfGVufDB8fDB8fHwy" alt="Neri" data-image="1" class="selectCapelliValue">
+            </div>
+            <div class="color-option">
+                <img src="" alt="Castano Scuro" data-image="2" class="selectCapelliValue">
+            </div>
+            <div class="color-option">
+                <img src="https://images.unsplash.com/photo-1560879311-6e94c5c61500?q=80&w=1456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Castano Medio" data-image="3" class="selectCapelliValue">
+            </div>
+        </div>
+
+        <h1>Seleziona il colore dei tuoi occhi</h1>
+        <input type="hidden" id="occhi" name="occhi" value="">
+
+        <div id="occhiSelector" class="color-selector">
+            <div class="color-option">
+                <img src="  https://images.unsplash.com/photo-1668337969181-8594075b4a9e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b2NjaGklMjBjYXN0YW5pfGVufDB8fDB8fHwy" alt="Occhi Castani" data-image="1" class="selectOcchiValue">
+            </div>
+            <div class="color-option">
+                <img src="
+                https://images.unsplash.com/photo-1575624373389-29cebdf163db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG9jY2hpJTIwdmVyZGl8ZW58MHx8MHx8fDI%3D
+
+
+               
+                
+                
+               " alt="Occhi Verdi" data-image="2" class="selectOcchiValue">
+            </div>
+            <div class="color-option">
+                <img src="https://images.unsplash.com/photo-1467400755985-87991fa9e2b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9jY2hpJTIwdmVyZGl8ZW58MHx8MHx8fDI%3D" alt="Occhi Azzurri" data-image="3" class="selectOcchiValue">
+            </div>
+        </div>
+
+
+      
+
+        <h1>Seleziona il colore della tua pelle</h1>
+        <input type="hidden" id="pelle" name="pelle" value="">
+
+        <div id="pelleSelector" class="color-selector">
+            <div class="color-option">
+                <img src="https://images.unsplash.com/photo-1541752988809-6073b61ad3db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBlbGxlJTIwY2hpYXJhfGVufDB8fDB8fHwy" alt="Pelle Chiara" data-image="1" class="selectPelleValue">
+            </div>
+            <div class="color-option">
+                <img src="https://images.unsplash.com/photo-1710580889701-9fa8f2cd5927?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBlbGxlJTIwY2hpYXJhfGVufDB8fDB8fHwy" alt="Pelle Scura" data-image="2" class="selectPelleValue">
+            </div>
+            <div class="color-option">
+                <img src="https://images.unsplash.com/photo-1631016066740-767dfc63096c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fHBlbGxlJTIwY2hpYXJhfGVufDB8fDB8fHwy" alt="Pelle Media" data-image="3" class="selectPelleValue">
+            </div>
+        </div>
+
+        <button type="submit">Continua</button>
+    </form>
+
+    <div id="risultato" class="hidden">
+        <h2>Hai selezionato:</h2>
+        <p id="coloreCapelli"></p>
+        <p id="coloreOcchi"></p>
+        <p id="colorePelle"></p>
+        <p id="stagione"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>

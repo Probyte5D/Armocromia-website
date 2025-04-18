@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Armocromia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Seleziona il tuo colore di capelli</h1>
+    <form id="armocromiaTest">
+        <div class="color-selector">
+            <!-- Div contenente le immagini, ogni immagine ha un valore associato -->
+            <div class="color-option" data-value="1">
+                <img src="https://images.unsplash.com/photo-1502711461379-d71e7b902510" alt="Neri">
+            </div>
+
+            <div class="color-option" data-value="2">
+                <img src="https://images.unsplash.com/photo-1663582815412-665909d70e01?q=80&w=1366&auto=format&fit=crop" alt="Castano Scuro">
+            </div>
+
+            <div class="color-option" data-value="3">
+                <img src="https://images.unsplash.com/photo-1605980766335-d3a41c7332a1?q=80&w=1374&auto=format&fit=crop" alt="Castano Medio">
+            </div>
+
+            <div class="color-option" data-value="4">
+                <img src="https://images.unsplash.com/photo-1605934357621-5bb659994fff" alt="Biondo">
+            </div>
+
+            <div class="color-option" data-value="5">
+                <img src="https://images.unsplash.com/photo-1506281140567-bf2b3c946fe1" alt="Biondo Rossato">
+            </div>
+        </div>
+
+        <button type="submit">Continua</button>
+    </form>
+
+    <div id="risultato" class="hidden">
+        <h2>Hai selezionato:</h2>
+        <p id="coloreCapelli"></p>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
