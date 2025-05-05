@@ -1,8 +1,8 @@
 
-const API_KEY = 'YOUR_NEW_API_KEY'; // Sostituisci con la tua nuova chiave API
-    const query = 'fashion look';  // Modifica la query per altre immagini
+const API_KEY = 'YOUR_NEW_API_KEY'; 
+    const query = 'fashion look';  
 
-    // Carica le immagini
+    //  immagini
     fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=52`, {
       headers: { Authorization: API_KEY }
     })
