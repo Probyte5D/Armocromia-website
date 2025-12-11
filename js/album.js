@@ -2,7 +2,6 @@
 const API_KEY = 'YOUR_NEW_API_KEY'; 
     const query = 'fashion look';  
 
-   // Richiesta immagini a Pexels (non funzionerà senza chiave reale)
 fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=52`, {
   headers: {
     Authorization: API_KEY
